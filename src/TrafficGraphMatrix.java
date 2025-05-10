@@ -45,7 +45,13 @@ public class TrafficGraphMatrix {
     public int size() {
         return nodes.size();
     }
-
+// filepath: c:\Users\HP\Downloads\SmartTrafficSimulator_WorkingMultiInput_Final\src\TrafficGraphMatrix.java
+public String getNodeName(int index) {
+    if (index < 0 || index >= nodes.size()) {
+        throw new IllegalArgumentException("Invalid node index: " + index);
+    }
+    return nodes.get(index);
+}
     // Get the distance between two nodes
     public int getDistance(int from, int to) {
         return matrix[from][to];
