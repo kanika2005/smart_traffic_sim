@@ -3,3 +3,5 @@ A C 2
 B C 1
 B D 5
 C D 8
+A F 10
+A E 6
